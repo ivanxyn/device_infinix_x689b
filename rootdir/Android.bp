@@ -1,0 +1,16 @@
+//
+// Copyright (C) 2024 The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+// Intentionally empty.
+//
+// Init rc files and fstab.enableswap used to be declared here as prebuilt_etc
+// modules installed to /vendor/etc/init/hw/ and /vendor/etc/. Those targets are
+// already provided by the X689B vendor blobs (x689b-vendor.mk), so declaring
+// them here again is a duplicate-target build error. See rootdir/README.md.
+//
+// The only device-tree rc installed is init.recovery.mt6768.rc, declared in
+// Android.mk; fstab.enableswap / fstab.mt6768 are staged into first_stage_ramdisk
+// via PRODUCT_COPY_FILES in device.mk.
