@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="github" fetch="https://github.com/" />
+
+  <!-- Device tree and vendor blobs for Infinix X689B.
+       These two projects are the scaffolding generated locally;
+       push them to GitHub (or symlink them into the ROM root) before building. -->
+  <project path="device/infinix/x689b" name="ivanxyn/device_infinix_x689b" remote="github" revision="main" />
+  <project path="vendor/infinix/x689b" name="ivanxyn/vendor_infinix_x689b_los" remote="github" revision="main" />
+
+  <!-- LineageOS 18.1 common MTK trees (uncomment as needed for bring-up) -->
+  <!-- <project path="hardware/mediatek" name="LineageOS/android_hardware_mediatek" remote="github" revision="lineage-18.1" /> -->
+  <!-- <project path="device/mediatek/sepolicy_vndr" name="LineageOS/android_device_mediatek_sepolicy_vndr" remote="github" revision="lineage-18.1" /> -->
+</manifest>
